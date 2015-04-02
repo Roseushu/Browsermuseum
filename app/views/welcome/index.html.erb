@@ -1,0 +1,298 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <!-- 导航栏-->
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+        data-target="#bs-example-navbar"> 
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">现代浏览器博物馆</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse"  id="bs-example-navbar">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">
+              综述
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">简述</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              特点
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#tab-chrome">Chrome</a>
+              </li>
+              <li>
+                <a href="#tab-firefox">Firefox</a>
+              </li>
+              <li>
+                <a href="#tab-safari">Safari</a>
+              </li>
+              <li>
+                <a href="#tab-opera">Opera</a>
+              </li>
+              <li>
+                <a href="#tab-ie">IE</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#about">关于</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- /.navbar-collapse --> </div>
+    <!-- /.container-fluid --> </nav>
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- 图片轮播-->
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <%= image_tag "1.png", class:"pic1"%>
+        <div class="carousel-caption">
+          <h3>Google Chrome</h3>
+          <p>Google Chrome是由Google开发的一款设计简单、高效的Web浏览工具。</p>
+          <button type="button" class="btn btn-primary btn-lg">点击下载</button>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "2.png", class:"pic1"%>
+        <div class="carousel-caption">
+          <h3>Mozilla Firefox</h3>
+          <p>
+            Mozilla Firefox，非正式中文名称火狐，是一个开源网页浏览器，使用Gecko引擎，由Mozilla基金会与数百个志愿者所开发。
+          </p>
+          <button type="button" class="btn btn-primary btn-lg">点击下载</button>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "3.png", class:"pic1"%>
+        <div class="carousel-caption">
+          <h3>Safari</h3>
+          <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。</p>
+          <button type="button" class="btn btn-primary btn-lg">点击下载</button>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "4.png", class:"pic1"%>
+        <div class="carousel-caption">
+          <h3>Opera浏览器</h3>
+          <p>Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。</p>
+          <button type="button" class="btn btn-primary btn-lg">点击下载</button>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "5.png", class:"pic1"%>
+        <div class="carousel-caption">
+          <h3>Internet Explorer</h3>
+          <p>
+            Internet Explorer，原称Microsoft Internet Explorer和Windows Internet Explorer，是微软公司推出的一款网页浏览器。
+          </p>
+          <button type="button" class="btn btn-primary btn-lg">点击下载</button>
+        </div>
+      </div>
+      ...
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"> </span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>
+      <span class="sr-only"></span>
+    </a>
+  </div>
+
+  <div class="container" id="sum-container-fluid">
+    <!--三栏 -->
+    <div class="row">
+
+      <div class="col-md-4">
+        <div>
+          <%= image_tag "1.png", class:"tupian1"%></div>
+        <h3>Chrome</h3>
+        <p>Google Chrome是由Google开发的一款设计简单、高效的Web浏览工具。</p>
+        <button type="button" class="btn btn-primary btn-lg">点击下载</button>
+      </div>
+      <div class="col-md-4">
+        <div>
+          <%= image_tag "2.png", class:"tupian1"%></div>
+        <h3>Firefox</h3>
+        <p>
+          Mozilla Firefox，非正式中文名称火狐，是一个开源网页浏览器，使用Gecko引擎，由Mozilla基金会与数百个志愿者所开发。
+        </p>
+        <button type="button" class="btn btn-primary btn-lg">点击下载</button>
+      </div>
+      <div class="col-md-4">
+        <div>
+          <%= image_tag "3.png", class:"tupian1"%></div>
+        <h3>Safari</h3>
+        <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。</p>
+        <button type="button" class="btn btn-primary btn-lg">点击下载</button>
+      </div>
+
+    </div>
+    <hr class="divider">
+
+    <div role="tabpanel">
+      <!-- 标签页-->
+
+      <!-- Nav tabs -->
+      
+          <ul class="nav nav-tabs" role="tablist" id="tab-list">
+        <li role="tab" class="active">
+          <a href="#tab-chrome"  role="tab" data-toggle="tab">Chrome</a>
+        </li>
+        <li >
+          <a href="#tab-firefox" role="tab" data-toggle="tab">Firefox</a>
+        </li>
+        <li >
+          <a href="#tab-safari"  role="tab" data-toggle="tab">Safari</a>
+        </li>
+        <li >
+          <a href="#tab-opera"  role="tab" data-toggle="tab">Opera</a>
+        </li>
+      </ul>
+
+
+<div class="container">
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab-chrome">
+          <div class="row feature">
+            <div class="col-md-5">
+              <%= image_tag "1.png", class:"pic1"%></div>
+            <div class="col-md-7">
+              <h2 class="feature_head">
+                Chrome
+                <span class="feature_head1">谷歌Chrome</span>
+              </h2>
+
+              <p>Google Chrome是由Google开发的一款设计简单、高效的Web浏览工具。</p>
+            </div>
+          </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane " id="tab-firefox">
+          <div class="row feature">
+            <div class="col-md-7">
+              <h1 class="feature_head">
+                Firefox
+                <span class=" feature_head1">Mozilla Firefox</span>
+              </h1>
+              <p>
+                MozillaFirefox，非正式中文名称火狐，是一个开源网页浏览器，使用Gecko引擎，由Mozilla基金会与数百个志愿者所开发。
+              </p>
+            </div>
+
+            <div class="col-md-5">
+              <div>
+                <%= image_tag "2.png", class:"pic1"%></div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-safari">
+          <div class="row feature">
+            <div class="col-md-5">
+              <div>
+                <%= image_tag "3.png", class:"pic1"%></div>
+            </div>
+            <div class="col-md-7">
+              <h2 class="feature_head">
+                Safari
+                <span class="feature_head1">Safari</span>
+              </h2>
+
+              <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器，使用了KDE的KHTML作为浏览器的运算核心。z</p>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-opera">
+          <div class="row feature">
+            <div class="col-md-7">
+              <h2 class="feature_head">
+                Opera浏览器
+                <span class="feature_head1">Opera浏览器</span>
+              </h2>
+
+              <p>Opera浏览器，是一款挪威Opera Software ASA公司制作的支持多页面标签式浏览的网络浏览器。</p>
+            </div>
+            <div class="col-md-5">
+              <div>
+                <%= image_tag "4.png", class:"pic1"%></div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    <hr class="divider">
+    <footer>
+      <p class="pull-right">
+        <a href="#top">回到顶部</a>
+      </p>
+      <p class="pull-left">2014.03.25 邦彦.束庆森</p>
+    </footer>
+
+  </div>
+  <div class="modal fade" id="about">
+    <!-- 弹出框-->
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">关于</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            大唐邦彦（上海）信息技术有限公司（简称大唐邦彦）是一家专注于移动互联网信息技术、大数据云平台、教育行业信息化和校企合作产教融合开发的高科技企业，公司成立于2014年，由大唐电信科技产业集团（电信科学技术研究院）投资建立。
+
+     大唐邦彦致力于移动互联网技术的开发与应用并积极投身教育事业，以产业引导教育改革，将科技创新成果与教育产业融合。大唐邦彦在以教育信息化促进人才培养的模式下不断发展与创新，为国家培养高素质的产业技术人才。
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">知道了</button>
+
+        </div>
+      </div>
+      <!-- /.modal-content --> </div>
+    <!-- /.modal-dialog --> </div>
+  <!-- /.modal -->
+
+  <script >
+$(document).ready(function(){
+    $("#bs-example-navbar .dropdown-menu a").click(function(){
+        var href = $(this) .attr("href");
+        $("#tab-list a[href='"+href+"']").tab("show");
+    });
+});
+</script>
